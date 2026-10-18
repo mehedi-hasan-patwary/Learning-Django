@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1 class="ba">SSSSSSSSSS</h1>
+    <img src="{% static "images/1.jpeg" %}" alt="" srcset="">
+    {{name}}
+
+    <p class='ba'>{{age}}</p>
+
+
+    {% for name in names %}   
+  <p>{{name}}</p>
+
+    {% endfor %}
+
+
+
+  {% for name in names %}   
+  <p>{{name}}</p>
+
+    {% endfor %}
+<p></p>
+
+<p></p>
+    next----------
+  
+
+    {% for name in names %}
+
+    {% if name == 'jhon' %}
+        <p>3rd_person</p>
+
+    {% elif name == 'smith' %}
+        <p>smith</p>
+
+    {% else %}
+        <p>janina</p>
+
+    {% endif %}
+
+{% endfor %}
+</body>
+</html>

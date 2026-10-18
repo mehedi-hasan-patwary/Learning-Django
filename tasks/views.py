@@ -2,24 +2,31 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 
-def home(request):
-    # pore shob kaj korbo
-    # work with database
-    # transform data
-    # data pass
-    # Http response/json respon
-    return HttpResponse("hi,bye")
+def maanger_dashboard(request):
+    return render(request, "dashboard/maanger.html")  # ei line change
 
-def contact(request):
-    return HttpResponse(' <h1> This is contact page </h1>')
 
-def show_task(request):
-    return HttpResponse('<h1>This is in task page --> show_task </h1>')
+def jk(request):
+    return render(request,"jk.html")
+def second_page(request):
+    return render(request, "dashboard/2nd.html")
 
-def show_specific_task(request, id):
-    print(f'{id}')
-    print(f'id type {type(id)}')
-    return HttpResponse('This is specific task page')
+def test(request):
+    return render(request,'test.html')
 
-def dashboard(request,id):
-    return HttpResponse('This is in dashboard')
+def test_2(request):
+    context={
+        'name' :["Mahmud","Ahmed","john"],
+        'age'  :23
+
+    }
+    return render(request,'test.html',context)
+def test_3(request):
+    context={
+        'names' :["Mahmud","Ahmed","john",'smith'],
+        'age'  :23
+
+    }
+    return render(request,'test.html',context)
+
+

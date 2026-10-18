@@ -1,0 +1,81 @@
+{% extends "dashboard/dashboard.html" %}
+
+{% block title %}Manager dashboard{% endblock title %}
+{% block tasks %}
+<!-- Task List -->
+         <div class="bg-white rounded-xl shadow p-5 overflow-x-auto">
+
+            <h2 class="text-xl font-bold mb-5">My Tasks</h2>
+
+            <table class="w-full text-left min-w-[600px]">
+
+                <thead>
+                    <tr class="text-gray-500 text-sm border-b">
+                        <th class="p-3">TASK TITLE</th>
+                        <th class="p-3">PRIORITY</th>
+                        <th class="p-3">TEAM</th>
+                        <th class="p-3">CREATED AT</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr class="border-b hover:bg-gray-50">
+                        <td class="p-3">
+                            <span class="text-green-500">●</span>
+                            Learn HTML
+                        </td>
+                        <td class="p-3 text-blue-500">Low</td>
+                        <td class="p-3">
+                            <span class="bg-blue-500 text-white rounded-full px-2 py-1 text-xs">MH</span>
+                            <span class="bg-blue-500 text-white rounded-full px-2 py-1 text-xs">CA</span>
+                        </td>
+                        <td class="p-3 text-gray-500">Today</td>
+                    </tr>
+
+                    <tr class="border-b hover:bg-gray-50">
+                        <td class="p-3">
+                            <span class="text-green-500">●</span>
+                            Learn Tailwind CSS
+                        </td>
+                        <td class="p-3 text-yellow-500">Medium</td>
+                        <td class="p-3">
+                            <span class="bg-blue-500 text-white rounded-full px-2 py-1 text-xs">MH</span>
+                            <span class="bg-blue-500 text-white rounded-full px-2 py-1 text-xs">CA</span>
+                        </td>
+                        <td class="p-3 text-gray-500">Yesterday</td>
+                    </tr>
+
+                    <tr class="border-b hover:bg-gray-50">
+                        <td class="p-3">
+                            <span class="text-green-500">●</span>
+                            Practice C++
+                        </td>
+                        <td class="p-3 text-red-500">High</td>
+                        <td class="p-3">
+                            <span class="bg-blue-500 text-white rounded-full px-2 py-1 text-xs">MH</span>
+                            <span class="bg-blue-500 text-white rounded-full px-2 py-1 text-xs">CA</span>
+                        </td>
+                        <td class="p-3 text-gray-500">2 days ago</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-3">
+                            <span class="text-green-500">●</span>
+                            Learn Grid Layout
+                        </td>
+                        <td class="p-3 text-blue-500">Low</td>
+                        <td class="p-3">
+                            <span class="bg-blue-500 text-white rounded-full px-2 py-1 text-xs">MH</span>
+                            <span class="bg-blue-500 text-white rounded-full px-2 py-1 text-xs">CA</span>
+                        </td>
+                        <td class="p-3 text-gray-500">3 days ago</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div> 
+
+
+{% endblock tasks %}
